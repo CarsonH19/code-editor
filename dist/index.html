@@ -9,7 +9,30 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/hint/show-hint.min.css">
   <title>Code Editor</title>
 </head>
+
 <body>
+
+  <div class="container">
+    <div class="header">
+      <div class="title">
+        <div class="main-title">
+          Live Code Editor
+        </div>
+        <div class="sub-title">
+          <span># </span>Spell Scripter
+        </div>
+      </div>
+    </div>
+
+    <div class="code-box">
+      <div class="editor" id="html"></div>
+      <div class="editor" id="css"></div>
+      <div class="editor" id="js"></div>
+    </div>
+    <div class="preview">
+      <iframe id="live-preview"></iframe>
+    </div>
+  </div>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/htmlmixed/htmlmixed.min.js"></script>
