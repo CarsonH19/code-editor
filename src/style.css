@@ -1,166 +1,88 @@
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+body{
+    margin: 0;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+.container{
+    font-family: "Source Sans 3", sans-serif;
 }
 
-/*  */
-/*  */
-
-body { 
-	margin: 0;
+.header{
+    background: #000;
+    color: #fff;
+    height: 60px;
+    border-bottom: 5px solid #333;
 }
 
-.container {
-	font-family: "Source Sans 3", sans-serif;
+.header .title{
+    padding: 0.5rem;
 }
 
-.header {
-	background: black;
-	color: white;
-	height: 60px;
-	border-bottom: 5px solid darkgrey;
+.header .title .main-title{
+    font-size: 18px;
+    font-weight: 600;
 }
 
-.header .title {
-	padding: 0.5rem;
+.header .title .sub-title{
+    font-size: 14px;
 }
 
-.header .title .main-title {
-	font-size: 18px;
-	font-weight: 600;
+.header .title .sub-title span{
+    color: #999;
 }
 
-.header .title .sub-title {
-	font-size: 14px;
+.editor{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
 }
 
-.header .title .sub-title span {
-	color: darkgray;	
-}
-
-.editor {
-	width: 33.33%;
-	height: 100%;
-	float: left;
-	box-sizing: border-box;
-	position: relative;
-}
-
-.editor #html {
-	border-right: 1px solid lightgrey;
+.editor #html{
+    border-right: 1px solid #777;
 }
 
 .editor #css{
-	border-right: 1px solid lightgrey;
-}
-.editor #js {
-	border-left: 20px solid darkgrey;
-	border-right: 1px solid lightgrey;
+    border-left: 20px solid #333;
+    border-right: 1px solid #777;
 }
 
-.editor #js {
-	border-left: 20px solid darkgrey;
+.editor #js{
+    border-left: 20px solid #333;
 }
 
-.code-box {
-	position: relative;
-	height: calc(50vh - 4.6rem);
-	border-top: 1px solid black;
-	border-bottom: 10 px solid darkgray; 
-	overflow: hidden;
+.code-box{
+    position: relative;
+    height: calc(50vh - 4.6rem);
+    border-top: 1px solid #000;
+    border-bottom: 10px solid #333;
+    overflow: hidden;
 }
 
-.preview {
-	position:relative;
-	height: calc(90vh - 30px);
-	background: white;
-	border-top: 10px ridge darkgray;
+.preview{
+    position: relative;
+    height: calc(90vh - 30px);
+    background: #fff;
+    border-top: 10px ridge #333;
 }
 
-.preview iframe {
-	width: 100%;
-	height: 100%;
+.preview iframe{
+    width: 100%;
+    height: 100%;
 }
 
-::-webkit-scrollbar {
-	width: 5px;
-	height: 5px;
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
 }
 
-::-webkit-scrollbar-track {
-	background: transparent;
+::-webkit-scrollbar-track{
+    background: transparent;
 }
 
-::-webkit-scrollbar-thumb {
-	background-color: #555;
-	border-radius: 20px;
-}
-
-/* Responsive */
-/* Example: Mobile-first approach */
-/* Media query for small devices */
-@media (min-width: 576px) {
-  /* Styles for small devices (e.g., smartphones) */
-}
-
-/* Media query for medium devices */
-@media (min-width: 768px) {
-  /* Styles for medium devices (e.g., tablets) */
-}
-
-/* Media query for large devices */
-@media (min-width: 992px) {
-  /* Styles for large devices (e.g., desktops) */
-}
-
-/* Media query for extra-large devices */
-@media (min-width: 1200px) {
-  /* Styles for extra-large devices (e.g., large desktops) */
+::-webkit-scrollbar-thumb{
+    background: #555;
+    border-radius: 20px;
 }
